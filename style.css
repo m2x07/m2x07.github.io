@@ -1,0 +1,82 @@
+/* css reset begins */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    color: #171717;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* css reset ends */
+
+h1,
+h2,
+h3 {
+    font-family: serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #1783f7;
+}
+
+ul,
+ol {
+    margin: 0px 0px 1rem 0px;
+    padding-left: 1.1rem;
+}
+
+ul > li,
+ol > li {
+    padding-left: 0.5rem;
+}
+
+main {
+    width: min(600px, 93%);
+    padding: 3rem 0;
+    margin: auto;
+}
+
+main section,
+main header {
+    margin-bottom: 2.75rem;
+}
+
+#banner {
+    width: 100%;
+    aspect-ratio: 4/1;
+    background-color: #def9fb;
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: 0% 99%;
+}
