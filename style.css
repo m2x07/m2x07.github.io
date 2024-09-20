@@ -1,4 +1,7 @@
-/* css reset begins */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+    font-size: 18px;
+}
 
 body {
     margin: 0;
@@ -8,6 +11,8 @@ body {
     box-sizing: border-box;
     color: #171717;
     background-color: #f0f0f0;
+    font-family: "Inter", sans-serif;
+    font-feature-settings: "calt" 0;
 }
 
 h1,
@@ -24,15 +29,19 @@ h6 {
 p {
     margin: 0;
     color: #2b2b2b;
+    line-height: 1.5;
 }
 
-/* css reset ends */
+p strong {
+    color: black;
+}
 
 h1,
 h2,
 h3 {
-    font-family: serif;
+    font-family: "DM Serif Text";
     font-weight: 600;
+    color: #000000;
 }
 
 h1 {
