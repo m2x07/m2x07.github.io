@@ -4,6 +4,15 @@
         --text_normal: #cfd3db;
         --text_strong: #ffffff;
         --text_link: #59a1ee;
+        --neutral: #222222;
+    }
+
+    .skill-card-modern {
+        background-color: var(--accent-bg-dark);
+        color: var(--accent-dark);
+    }
+    .skill-card-modern::before {
+        background-color: var(--accent-dark);
     }
 }
 
@@ -13,6 +22,15 @@
         --text_normal: #202026;
         --text_strong: #000000;
         --text_link: #0e75e3;
+        --neutral: #ececec;
+    }
+
+    .skill-card-modern {
+        background-color: var(--accent-bg-light);
+        color: var(--accent-light);
+    }
+    .skill-card-modern::before {
+        background-color: var(--accent-light);
     }
 }
 
@@ -22,25 +40,38 @@ body {
     padding: 2rem 0;
     margin: auto;
     background-color: var(--bg_col);
-    font-family: FreeSans, 'Liberation Sans', 'Nimbus Sans', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-family:
+        FreeSans,
+        "Liberation Sans",
+        "Nimbus Sans",
+        -apple-system,
+        BlinkMacSystemFont,
+        Roboto,
+        "Segoe UI",
+        "Helvetica Neue",
+        sans-serif;
     color: var(--text_normal);
     line-height: 1.45;
-}
-
-section {
-    margin: 2rem 0;
-}
-
-a {
-    color: var(--text_link);
-    text-decoration: underline;
-    text-underline-offset: 4px;
 }
 
 p {
     margin: 0.5rem 0 1rem 0;
     text-align: justify;
     hyphens: auto;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+section#skills p {
+    text-align: left;
+}
+
+a {
+    color: var(--text_link);
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 h1,
@@ -64,6 +95,25 @@ small {
     color: gray;
 }
 
+.skill-card-modern {
+    padding: 0.4rem 1rem;
+    margin: 0 4px 8px 0;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+}
+
+.skill-card-modern::before {
+    content: "";
+    width: 4px;
+    height: 55%;
+    border-radius: 999px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0%, -50%);
+}
+
 ul,
 ol {
     padding-left: 1rem;
@@ -78,6 +128,7 @@ nav {
 table {
     width: 100%;
 }
+
 table caption {
     text-align: left;
 }
