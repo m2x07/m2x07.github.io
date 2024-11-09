@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg_col: #111111;
+        --bg_col: #0d0d0d;
         --text_normal: #cfd3db;
         --text_strong: #ffffff;
         --text_link: #59a1ee;
