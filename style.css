@@ -11,6 +11,7 @@
         background-color: var(--accent-bg-dark);
         color: var(--accent-dark);
     }
+
     .skill-card-modern::before {
         background-color: var(--accent-dark);
     }
@@ -29,6 +30,7 @@
         background-color: var(--accent-bg-light);
         color: var(--accent-light);
     }
+
     .skill-card-modern::before {
         background-color: var(--accent-light);
     }
@@ -41,7 +43,7 @@ body {
     margin: auto;
     background-color: var(--bg_col);
     font-family:
-        FreeSans,
+        "Free Sans",
         "Liberation Sans",
         "Nimbus Sans",
         -apple-system,
@@ -49,6 +51,7 @@ body {
         Roboto,
         "Segoe UI",
         "Helvetica Neue",
+        system-ui,
         sans-serif;
     color: var(--text_normal);
     line-height: 1.45;
