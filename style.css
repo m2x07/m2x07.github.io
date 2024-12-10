@@ -3,7 +3,7 @@
         --bg_col: #0d0d0d;
         --text_normal: #cfd3db;
         --text_strong: #ffffff;
-        --text_link: #59a1ee;
+        --text_link: #667eff;
         --neutral: #222222;
     }
 
@@ -20,9 +20,9 @@
 @media (prefers-color-scheme: light) {
     :root {
         --bg_col: #ffffff;
-        --text_normal: #202026;
+        --text_normal: #2b2b2b;
         --text_strong: #000000;
-        --text_link: #0e75e3;
+        --text_link: #4663ff;
         --neutral: #ececec;
     }
 
@@ -36,9 +36,13 @@
     }
 }
 
+:root {
+    font-size: 18px;
+}
+
 body {
     color-scheme: light dark;
-    width: min(600px, 93%);
+    width: min(1000px, 93%);
     padding: 2rem 0;
     margin: auto;
     background-color: var(--bg_col);
@@ -123,6 +127,11 @@ ol {
     margin: 0.5rem 0 1rem 0;
 }
 
+#nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav {
     display: flex;
     gap: 0.75rem;
@@ -134,4 +143,8 @@ table {
 
 table caption {
     text-align: left;
+}
+
+td > pre {
+    margin: 0;
 }
