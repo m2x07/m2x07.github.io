@@ -1,0 +1,64 @@
+:root {
+    --primary-bg: #7f868f;
+}
+
+body {
+    background-color: var(--primary-bg);
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    color: white;
+    line-height: 1.75;
+}
+
+main {
+    max-width: 540px;
+    margin: 3rem auto;
+}
+
+main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+main h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+nav a {
+    padding: 0 5px;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+    transition: all 100ms linear;
+}
+
+a:hover {
+    color: #ff510e;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-shadow: 1px 1px 0px gray;
+}
+
+#sec-1 i {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+/* for phones and smaller screens */
+@media screen and (max-width: 540px) {
+    main header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
