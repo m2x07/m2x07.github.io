@@ -1,5 +1,22 @@
 :root {
-    --primary-bg: #7f868f;
+    --primary-bg: #5e666d;
+}
+
+*::selection {
+    color: #ff510e;
+    background: black;
+    box-shadow: 2px 2px 0px #ff510e;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff510e;
+    background: black;
+    box-shadow: 2px 2px 0px #ff510e;
 }
 
 body {
@@ -15,6 +32,24 @@ main {
     margin: 3rem auto;
 }
 
+nav a {
+    padding: 0 0.8em;
+}
+
+nav a:hover {
+    color: white;
+    background: none;
+    box-shadow: none;
+}
+
+.fa-brands, .fa-solid {
+    scale: 1.5;
+}
+
+.fa-key {
+    scale: 1.4;
+}
+
 main header {
     display: flex;
     justify-content: space-between;
@@ -23,35 +58,18 @@ main header {
 }
 
 main h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
-    text-decoration: underline;
+    text-decoration: underline dotted 2px;
     text-underline-offset: 4px;
-}
-
-nav a {
-    padding: 0 5px;
-}
-
-a, a:visited {
-    color: white;
-    text-decoration: none;
-    transition: all 100ms linear;
-}
-
-a:hover {
-    color: #ff510e;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-shadow: 1px 1px 0px gray;
 }
 
 #sec-1 i {
     display: block;
     text-align: center;
     font-style: italic;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 /* for phones and smaller screens */
